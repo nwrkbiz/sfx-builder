@@ -53,7 +53,7 @@ void NormalPage::Draw() {
         // textarea
         m_Text = std::make_unique<Fl_Text_Display>(0, 0, 0, 340);
         m_Text->box(FL_FLAT_BOX);
-        m_TextBuf->text(m_Page["text"].ToString().c_str());
+        m_TextBuf->text(m_Page["text"].ToUnescapedString().c_str());
         m_Text->buffer(m_TextBuf.get());
         m_Text->wrap_mode(Fl_Text_Display::WRAP_AT_BOUNDS, 0);
         f->rule(m_Text.get(), "=<^");
