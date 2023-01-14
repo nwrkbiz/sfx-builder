@@ -2,7 +2,7 @@ Simple SFX (Self Extracting Archive) Builder
 ============================================
 
 This project allows creating simple self extracting zip archives for windows and linux.
-Place a [.sfx.manifest.json](./.sfx.manifest.json) file in the root of your zip archive to configure your installer.
+Place a [.sfx.manifest.json](./.sfx.manifest.json) file in the root of your zip archive to configure your installer. You can set custom images per page by adding Base64 strings of 135px x 450px pngs to the JSON file.
 
 After creating your zip archive you can make it self extracting by executing:
 
