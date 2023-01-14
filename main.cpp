@@ -68,7 +68,7 @@ r_val getFromCmdLine(const boost::program_options::variables_map& vm, int argc, 
     }
 
     if(vm.count("sfx")){
-        zip = vm["sfx"].as<std::string>();
+        sfx = vm["sfx"].as<std::string>();
     }
 
     if(vm.count("outfile")){

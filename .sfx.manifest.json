@@ -1,8 +1,8 @@
 {
-  "need_root": false,
+  "need_root": true,
   "title": "Installer",
   "icon": "",
-  "extract_to" : "/home/giri/test",
+  "extract_to" : "C:/test",
   "finish_title" : "Success!",
   "finish_text" : "The component has been installed.",
   "post_install" : "",
