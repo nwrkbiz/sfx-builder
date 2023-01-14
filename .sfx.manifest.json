@@ -1,0 +1,41 @@
+{
+  "need_root": false,
+  "title": "Installer",
+  "icon": "",
+  "extract_to" : "/home/giri/test",
+  "finish_title" : "Success!",
+  "finish_text" : "The component has been installed.",
+  "post_install" : "",
+  "pages": [
+    {
+      "checkbox": false,
+      "checkbox_text": "",
+      "title": "Welcome",
+      "text": "Welcome!",
+      "prev_text": "",
+      "next_text": "Next",
+      "image": "",
+      "percentage": 33.33 
+    },
+    {
+      "checkbox": true,
+      "checkbox_text": "I Agree.",
+      "title": "License",
+      "text": "License!",
+      "prev_text": "Back",
+      "next_text": "Next",
+      "image": "",
+      "percentage": 66.66 
+    },
+    {
+      "checkbox": false,
+      "checkbox_text": "",
+      "title": "Install",
+      "text": "",
+      "prev_text": "Back",
+      "next_text": "Install!",
+      "image": "",
+      "percentage": 100
+    }
+  ]
+}
