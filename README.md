@@ -10,7 +10,7 @@ After creating your zip archive you can make it self extracting by executing:
 sfx.linux_x86_64_musl --zip archive.zip --outfile Installer.run
 ````
 
-You can also create self extracting archives on for windows and vice versa:
+You can also create self extracting archives on linux for windows and vice versa:
 
 ````
 // linux to windows
