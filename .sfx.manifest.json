@@ -5,6 +5,7 @@
   "extract_to" : "C:/test",
   "finish_title" : "Success!",
   "finish_text" : "The component has been installed.",
+  "pre_install" : "",
   "post_install" : "",
   "pages": [
     {

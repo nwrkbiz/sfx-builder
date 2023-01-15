@@ -137,7 +137,10 @@ int main(int argc, char **argv) {
                 ss << pct;
                 std::cout << f + " ("+ ss.str() +"%)" << std::endl;
             });
-
+            
+            if(s.hasKey("pre_install") && !s["pre_install"].ToString().empty()) {
+                    system(s["pre_install"].ToString().c_str());
+            }
             std::cout << "Extract to: " << s["extract_to"].ToString() << std::endl;
             z->extract(s["extract_to"].ToString());
             if(s.hasKey("post_install") && !s["post_install"].ToString().empty()) {
@@ -176,6 +179,10 @@ int main(int argc, char **argv) {
                         }
                         Fl::check();
                     });
+
+                    if(s.hasKey("pre_install") && !s["pre_install"].ToString().empty()) {
+                            system(s["pre_install"].ToString().c_str());
+                    }
 
                     z->extract(s["extract_to"].ToString());
                     p->SetPercentage(100);
