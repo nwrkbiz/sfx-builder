@@ -1,7 +1,7 @@
 101 ICON DISCARDABLE "./Icon.ico"
 1 VERSIONINFO
-FILEVERSION     1,0,0,4
-PRODUCTVERSION  1,0,0,4
+FILEVERSION     1,0,0,5
+PRODUCTVERSION  1,0,0,5
 FILEFLAGSMASK   0X3FL
 FILEFLAGS       0L
 FILEOS          0X40004L
@@ -14,12 +14,12 @@ BEGIN
         BEGIN
 	    VALUE "CompanyName", "Daniel Giritzer (nwrk.biz)"
             VALUE "FileDescription", "Built using nwrk.biz SFX Builder"
-            VALUE "FileVersion", "1.0.0.4"
+            VALUE "FileVersion", "1.0.0.5"
             VALUE "InternalName", "sfx_builder"
             VALUE "LegalCopyright", "(c) Daniel Giritzer"
             VALUE "OriginalFilename", "sfx.windows_32.exe"
             VALUE "ProductName", "sfx_builder"
-	    VALUE "ProductVersion", "1.0.0.4"
+	    VALUE "ProductVersion", "1.0.0.5"
         END
     END
     BLOCK "VarFileInfo"
