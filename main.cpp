@@ -92,22 +92,12 @@ int main(int argc, char **argv) {
     auto config = getFromCmdLine(vm, argc, argv);
 
     if(config.pack) {
-        std::ofstream outFile(config.outfile, std::ios::ate | std::ios::binary);
-        std::ifstream sfx(config.sfx);
-        std::ifstream zip(config.zip);
+        std::ofstream outFile(config.outfile, std::ios::binary);
+        std::ifstream sfx(config.sfx, std::ios::binary);
+        std::ifstream zip(config.zip, std::ios::binary);
 
-        // installer file
-        std::copy( 
-            (std::istreambuf_iterator<char>(sfx)),
-            std::istreambuf_iterator<char>(),
-            std::ostreambuf_iterator<char>(outFile)
-        );
-        // zip archive
-        std::copy( 
-            (std::istreambuf_iterator<char>(zip)),
-            std::istreambuf_iterator<char>(),
-            std::ostreambuf_iterator<char>(outFile)
-        );
+        // installer file + zip file
+        outFile << sfx.rdbuf() << zip.rdbuf();
 
         // size of installer file for extracting
         std::uintmax_t size = std::filesystem::file_size(config.sfx);
